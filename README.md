@@ -1,4 +1,4 @@
 green-math
 ==========
 
-Simple game developed using 'jQuery UI' in HTML5.
+Simple game developed in HTML5 using 'jQuery UI'.
