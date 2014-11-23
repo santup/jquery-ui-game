@@ -1,7 +1,7 @@
 green-math
 ==========
 
-Simple interactive game developed in HTML5 using JQuery,jQuery UI.
+Simple interactive game developed using HTML5, CSS3, JQuery and jQuery UI.
 
 
 <h3>Complete Project Description:</h3>
