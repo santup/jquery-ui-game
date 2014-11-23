@@ -1,4 +1,4 @@
-green-math
+GREEN MATH
 ==========
 
 Simple interactive game developed using HTML5, CSS3, JQuery and jQuery UI.
