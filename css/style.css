@@ -1,0 +1,253 @@
+
+	body,html{
+		margin:0;
+		padding: 0;
+		background-image: url(../images/bg.jpg);
+		background-size:cover;
+		width:100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	/*	remove jQuery's default dialog title close button  */
+	.ui-dialog-titlebar-close{
+		display: none;
+	}
+
+	/*	background behind the dialog modal */
+	.ui-widget-overlay
+	{
+			opacity: .50; /* Make sure to change both of these, as IE only sees the second one */
+			filter: Alpha(Opacity=50);
+		background: #000 ; /* This will make it darker */
+	}
+
+	/*	cover screen with transparent at start game */
+	#cover{
+		z-index:999;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000000;
+		opacity:0.5;
+
+	}
+
+	/*game start play button*/
+	#play img{
+		width:159px;
+
+		z-index:9999;
+		opacity:1 !important;
+		position: fixed;
+   		top: 50%;
+    	left: 50%;
+ 		margin-left: -75px;
+    	margin-top: -75px;
+		background-position: center;
+	}
+
+	#wrapper{
+		width:980px;
+		margin:0 auto;
+		position: fixed;
+
+	}
+
+	/*	table of all draggable elements */
+	#drag{
+		padding: 250px 0 0 140px;
+
+	}
+
+	/*	table of all droppable elements */
+	#drop{
+		padding: 30px 0 0 225px;
+
+	}
+
+
+	/* ****** START ******	draggable numbers - green color leaf */
+	.drag-digit span{
+		margin-left: 6px;
+	}
+
+	.drag-digit{
+		background-image: url(../images/drag-leaf.png);
+		padding: 28px 0px 0 20px;
+		cursor: pointer;
+	} 
+	/* ****** END ****** */
+
+
+	/* common div leaf */
+	.leaf{
+		color:#fff;
+		width:88px;
+		height:116px;
+		background-repeat: no-repeat ;
+		font-family: helvetica;
+		font-size: 4em;
+		text-shadow:1px 2px 10px #000000;
+	}
+
+	
+	/* droppable numbers - black color leaf */
+	.drop-digit{
+		background-image: url(../images/drop-leaf.png);
+	}	
+
+	/* result numbers - orange color leaf  */
+	.result{
+		width:110px;
+		height:163px;
+		background-image: url(../images/result-leaf.png) !important;
+		background-repeat: no-repeat ; 
+		margin-top: 30px;
+		padding: 50px 0px 0 20px;
+		text-shadow:1px 2px 10px #000000;
+		font-weight: bold;
+		color:#ffffff;
+		cursor: default;
+	}
+
+
+	/*---------- operators '+ - * /' ---------*/
+	.operators{
+		font-family: helvetica;
+		font-size: 5em;
+		font-weight: bold;
+	}
+
+	.operators span{
+		padding:10px;
+	}
+
+
+	/* timer with 60 seconds*/
+	#timer{
+		width:170px;
+		height:192px;
+		background-image: url(../images/timer.png) !important;
+		background-repeat: no-repeat ; 
+		text-shadow:1px 2px 10px #000000;
+		font-weight: bold;
+		color:#A5DF00;
+		margin-top: 15px;
+		padding: 60px 0px 0 35px;
+		cursor: default;
+		position: fixed;
+		font-family: helvetica;
+		font-size: 4em;
+		text-shadow:1px 2px 10px #000000;
+		float: left;
+		top: 10px;
+		left:-1px;
+
+	}
+
+	/* div with submit image */
+	#submit{
+		position: fixed;
+		float: left;
+		bottom: -3px;
+		right:-5px;
+		cursor:pointer;
+	}
+
+	/* div with spider image */
+	#spider{
+		width:150px;
+		height:560px;
+		background-image: url(../images/spider.png);	
+		background-repeat: no-repeat;
+		position: fixed;
+		float: left;
+		top: -350px;
+		right: -10px;
+		z-index:999;
+
+	}
+
+	/* div with bubbles image */
+	#bubbles{
+		position: fixed;
+		float: left;
+		top: 230px;
+		right: 10px;
+		z-index:99999;
+		height: 430px;
+		width: 60px;	
+		display:none;
+	}
+
+	#logo{
+		background-image: url(../images/logo.png);
+		background-repeat: no-repeat;
+		position: fixed;
+		float: left;
+		top: -10px;
+		left: 190px;
+		z-index:9999;
+		width:200px;
+		height:190px;
+		cursor: pointer;
+	}
+
+	/* div with help information */
+	#intro{
+		background-image: url(../images/intro.png);
+		background-repeat: no-repeat;
+		position: fixed;
+		float: left;
+		top: -20px;
+		right: 193px;
+		z-index:9;
+		width:410px;
+		height: 300px;
+		display: none;
+	}	
+
+	
+	#score_points{
+		display: none;	
+	}
+
+	/* START ******** div to change color continuously  */
+	.animate {
+	    -webkit-animation: animate_bg 2s;
+	    animation: animate_bg 2s;
+	    -webkit-animation-iteration-count: infinite; 
+	    animation-iteration-count: infinite;
+	}
+
+
+	@keyframes animate_bg {
+	    0%   {background:red;}
+	    20%  {background:maroon;}
+	    30% {background:yellow;}
+	    40% {background:olive;}
+	    50% {background:lime}
+	    60% {background:green;}
+	    70% {background:teal;}
+	    80% {background:blue;}
+	    90% {background:navy;}
+	    100% {background:purple;}
+	}
+
+
+	@-webkit-keyframes animate_bg {
+	    0%   {background:red;}
+	    20%  {background:maroon;}
+	    30% {background:yellow;}
+	    40% {background:olive;}
+	    50% {background:lime}
+	    60% {background:green;}
+	    70% {background:teal;}
+	    80% {background:blue;}
+	    90% {background:navy;}
+	    100% {background:purple;}
+
+	}/* ENDS *********/

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GREEN MATH - GAME</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+	<meta charset="utf-8"/>
+<!--Here is the css file you are using for your project UI included from CDN (content delivery network)
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+<!--Here is the main jQuery file included from CDN.You can you any other source
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+
+<!--Here is jQuery UI added from CDN
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+<!-- These javascript libraries for ion.sound -->
+	<script type="text/javascript" src="js/ion.sound.js"></script>
+	<script type="text/javascript" src="js/ion.sound.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ion.sound.js"></script>
+	<script type="text/javascript" src="js/jquery.ion.sound.min.js"></script>
+
+<!-- custom javascript file -->
+	<script type="text/javascript" src="js/script.js"></script>
+<!-- custom stylesheet file -->	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+	<img id="bubbles"  src="images/bubbles.gif"/> <!-- bubbles image -->	
+	<div id="logo"></div> <!-- logo div-->	
+	<div id="intro"></div> <!-- div for help/introduction screen-->	
+	
+	<a href="#" id="play"><img src="images/play.png"></a>
+	<div id="cover"></div>  <!-- div for cover the entire screen with transparent background at welcome screen-->	
+
+	<div id="wrapper">			
+		<div id="timer">30</div>  <!-- div for timer with default 30 seconds-->	
+		<div id="spider"></div>  <!-- div for spider image -->	
+
+		 <!-- draggable green color leafs -->	
+		<table id="drag">
+			<tr>
+				<td>	<div class="drag-digit leaf" ><span>1</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>2</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>3</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>4</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>5</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>6</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>7</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>8</span></div>	</td>
+				<td>	<div class="drag-digit leaf" ><span>9</span></div>	</td>						
+			</tr>
+		</table>	
+
+		 <!-- droppables black color leafs  -->	
+		<table id="drop">
+			<tr>
+				<td>	<div class="operators">		<span> ( </span></div>	</td>
+				<td>	<div class="drop-digit leaf" id="drop1" value="0">	</div>	</td>
+				<td>	<div class="operators">		<span> - </span></div>	</td>
+				<td>	<div class="drop-digit leaf" id="drop2" value="0">	</div>	</td>
+				<td>	<div class="operators">		<span> ) </span></div>	</td>
+				<td>	<div class="operators">		<span> x </span></div>	</td>
+				<td>	<div class="drop-digit leaf" id="drop3" value="0">  </div>  </td>
+				<td>	<div class="operators">		<span> - </span></div>	</td>
+				<td>	<div class="drop-digit leaf" id="drop4" value="0">  </div>	</td>	
+				<td>	<div class="operators">		<span> = </span></div>	</td>									
+				<td>	<div class="drop-digit leaf result"> <span id="result-digit">00</span></div>	</td>	
+			</tr>
+		</table>	
+
+		 <!-- submit image -->	
+		<img src="images/submit.png" id="submit"/>
+
+		 <!-- confirm-dialog div for all answers (right,wrong and gameover) -->	
+		<div id="confirm-dialog" title="ANSWER!">
+			<p id="score_points"  style="font-size:1.3em;">Score Points: <span style="font-size:1.4em;font-weight:bold">--</span></p>
+		</div>
+	</div>
+</body>
+
+</html>
