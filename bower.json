@@ -1,11 +1,9 @@
 {
 "name": "jquery-ui-game",
 "version": "1.0.0",
-"main": "jquery-ui.css",
+"main": "./index.html",
 "author": "Santosh Parashetti",
-"ignore": [
-  
-],
+
 "keywords": [
 "jquery-ui-game",
 "game",
