@@ -1,14 +1,15 @@
 {
 "name": "jquery-ui-game",
 "version": "1.0.0",
-"main": " ",
+"main": "jquery-ui.css",
 "author": "Santosh Parashetti",
 "ignore": [
   
 ],
 "keywords": [
-"jquery-ui",
+"jquery-ui-game",
 "game",
 "MathGreen",
+"jquery-ui"
 ]
 }
